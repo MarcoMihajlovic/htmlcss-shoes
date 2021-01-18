@@ -4,8 +4,34 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Rubik Mono One', sans-serif;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  z-index: 2;
+}
+
+nav li {
+  list-style: none;
+  float: right;
+  background-color: white;
+  border-radius: 50%;
+  width: 50px;
+  text-align: center;
+  margin-left: 10px;
+}
+
+li {
+  text-decoration: none;
 }
 
 .container {
@@ -15,17 +41,17 @@ body {
   position: relative;
 }
 
-.red {
+#red {
   background-color: darkred;
   color: yellow;
 }
 
-.green {
+#green {
   color: yellow;
   background-color: forestgreen;
 }
 
-.yellow{
+#yellow{
   color: forestgreen;
   background-color: yellow;
 }
